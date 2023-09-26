@@ -1,0 +1,156 @@
+#Layer_2 {
+  width: 100px;
+  
+}
+
+.loader img {
+    width:50% ;
+  margin: 10px;
+}
+
+
+
+
+.loaderHolder{
+    background: #b3730e;
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+  }
+  h1.loader{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    font-size: 4.6875em;
+    color: transparent;
+    letter-spacing: 0.01em;
+  }
+  .loader span{
+    text-shadow:
+      0 0 2px rgba(204, 208, 212,0.9),
+      0 15px 25px rgba(0, 0, 0, 0.3),
+      0 -2px 3px rgba(0, 0, 0, 0.1),
+      0 -5px 10px rgba(255, 255, 255, 0.5),
+      0 5px 10px rgba(0, 0, 0, 0.3),
+      0 3px 4px rgba(255, 255, 255, 0.2),
+      0 0 20px rgba(255, 255, 255, 0.45);
+    
+      animation: loading 0.85s ease-in-out infinite alternate;
+  }
+  
+  @keyframes loading {
+      to {text-shadow:
+      0 0 2px rgba(204, 208, 212,0.2),
+      0 0 3px rgba(0, 0, 0, 0.02),
+      0 0 0 rgba(0, 0, 0, 0),
+      0 0 0 rgba(255, 255, 255, 0),
+      0 0 0 rgba(0, 0, 0, 0),
+      0 0 0 rgba(255, 255, 255, 0),
+      0 0 0 rgba(255, 255, 255, 0);}
+  }
+  
+  .loader span:nth-child(2){
+    animation-delay:0.15s;
+  }
+  .loader span:nth-child(3){
+    animation-delay:0.30s;
+  }
+  .loader span:nth-child(4){
+    animation-delay:0.45s;
+  }
+  .loader span:nth-child(5){
+    animation-delay:0.60s;
+  }
+  .loader span:nth-child(6){
+    animation-delay:0.75s;
+  }
+  .loader span:nth-child(7){
+    animation-delay:0.90s;
+  }
+
+
+html {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(238, 143, 0);
+    padding: 0 10%;
+    height: 4rem;
+}
+
+.header li a{
+  text-decoration: none;
+}
+.header li {
+    display: inline;
+    color:rgb(10, 68, 226);
+    font-weight: bold;
+    padding-right: 2rem;
+}
+
+/*Banner*/
+
+.banner {
+
+  background-image: url(hotlap.jpg);
+    height: 660px; 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+
+.banner h1{
+   font-size: 100px;
+    text-align:right;
+    color: rgb(241, 145, 0);
+    margin-top: 200PX;
+    margin-left: 25PX;
+    f
+}
+.banner:hover h1{
+    animation-duration: 1s;
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateY(0)
+    }
+  
+    to {
+        transform: rotateY(180deg)
+    }
+  }
+
+.banner h2{
+    font-size: 50px;
+    width: 300px ;
+    text-align: center;
+    color: rgb(241, 145, 0);
+    margin-top: 0px;
+    margin-left: 25px;
+}
+
+  
+li > a:visited{
+    color: rgb(0, 26, 255);
+    text-decoration:none;
+}
+
